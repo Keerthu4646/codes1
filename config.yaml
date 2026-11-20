@@ -1,0 +1,16 @@
+blob:
+  raw_container: invoices-raw
+  reports_container: reports
+queue:
+  name: invoices-queue
+  max_retrives: 3
+cosmos:
+  database: cartnova
+  container: invoices
+supplier_service:
+  url: https://1270.0.08003
+  timeout_seconds: 3
+limits:
+  max_file_size_mb: 5
+  allowed_types: [application/pdf, image/jpeg, image/png]
+sas_expiry_minutes: 15
